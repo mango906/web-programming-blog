@@ -22,6 +22,13 @@ public class PostServiceImpl implements PostService {
     private UserRepository userRepository;
 
     @Override
+    public Post get(Long userId) {
+        return this.postRepository
+                .findTopByUserIdOrderByIdDesc(userId)
+                .orElse(null);
+    }
+
+    @Override
     public List<PostUsernameProtocol> get() {
         List<Post> postList = this.postRepository.findAll();
         List<PostUsernameProtocol> pList = new ArrayList<>();
@@ -48,8 +55,7 @@ public class PostServiceImpl implements PostService {
         if (found.isPresent()) {
             found.get().setTitle(post.getTitle());
             found.get().setContent(post.getContent());
-            found.get().setStoredPath(post.getStoredPath());
-            found.get().setOriginalName(post.getOriginalName());
+            found.get().setPictures(post.getPictures());
             return this.postRepository.save(found.get());
         }
         return null;

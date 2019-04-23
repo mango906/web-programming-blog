@@ -6,6 +6,9 @@ import kr.hs.dgsw.web_blog.Protocol.PostUsernameProtocol;
 import java.util.List;
 
 public interface PostService {
+
+    public Post get(Long userId);
+
     public List<PostUsernameProtocol> get();
 
     public PostUsernameProtocol add(Post post);

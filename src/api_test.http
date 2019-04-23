@@ -21,6 +21,7 @@ PUT http://localhost:8080/updateUser
 Content-Type: application/json
 
 {
+
   "account": "test",
   "password": "123456",
   "name": "testname22",

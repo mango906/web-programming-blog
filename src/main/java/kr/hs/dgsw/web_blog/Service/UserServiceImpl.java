@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User get(String account) {
+    public User get(String account){
         Optional<User> found = userRepository.findByAccount(account);
         if (found.isPresent()) {
             return found.get();
