@@ -28,8 +28,24 @@ public class PostController {
         }
     }
 
-    @GetMapping("/getPostById")
-    public ResponseFormat get(Long userId) {
+    @GetMapping("/getPostById/{Id}")
+    public ResponseFormat getById(@PathVariable Long Id){
+        try{
+            return new ResponseFormat(
+                    ResponseType.POST_ID_GET,
+                    this.postService.getById(Id),
+                    Id
+            );
+        } catch (Exception e){
+            return new ResponseFormat(
+                    ResponseType.FAIL,
+                    null
+            );
+        }
+    }
+
+    @GetMapping("/getPostByUserId/{userId}")
+    public ResponseFormat get(@PathVariable Long userId) {
         try {
             return new ResponseFormat(
                     ResponseType.POST_ID_GET,

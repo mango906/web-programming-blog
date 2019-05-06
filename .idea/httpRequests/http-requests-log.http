@@ -1,3 +1,182 @@
+POST http://localhost:8080/addUser
+Content-Type: application/json
+
+{
+   "account": "minkb01",
+   "password": "1234",
+   "name": "testname",
+   "email": "test@gmail.com",
+   "phone": "010-1234-5678"
+}
+
+<> 2019-05-06T065733.200.json
+
+###
+
+POST http://localhost:8080/addUser
+Content-Type: application/json
+
+{
+   "account": "minkb01",
+   "password": "1234",
+   "name": "testname",
+   "email": "test@gmail.com",
+   "phone": "010-1234-5678"
+}
+
+<> 2019-05-01T111257.200.json
+
+###
+
+POST http://localhost:8080/addPost
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "title",
+  "content": "content"
+};
+
+<> 2019-05-01T105246.200.json
+
+###
+
+POST http://localhost:8080/addPost
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "title",
+  "content": "content"
+};
+
+<> 2019-05-01T102419.200.json
+
+###
+
+POST http://localhost:8080/addPost
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "title",
+  "content": "content"
+};
+
+<> 2019-05-01T102219.200.json
+
+###
+
+POST http://localhost:8080/addPost
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "title",
+  "content": "content"
+};
+
+<> 2019-05-01T101756.200.json
+
+###
+
+POST http://localhost:8080/addPost
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "title",
+  "content": "content"
+};
+
+<> 2019-05-01T101258.200.json
+
+###
+
+DELETE http://localhost:8080/deletePost/1
+Accept: application/json;
+
+<> 2019-05-01T101223.200.json
+
+###
+
+POST http://localhost:8080/addPost
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "title",
+  "content": "content"
+};
+
+<> 2019-05-01T100805.200.json
+
+###
+
+POST http://localhost:8080/addPost
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "title",
+  "content": "content"
+};
+
+<> 2019-05-01T100004.200.json
+
+###
+
+POST http://localhost:8080/addPost
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "title",
+  "content": "content"
+};
+
+<> 2019-05-01T094723.200.json
+
+###
+
+POST http://localhost:8080/addPost
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "title",
+  "content": "content"
+};
+
+<> 2019-05-01T094706.200.json
+
+###
+
+POST http://localhost:8080/addUser
+Content-Type: application/json
+
+{
+   "account": "test",
+   "password": "1234",
+   "name": "testname",
+   "email": "test@gmail.com",
+   "phone": "010-1234-5678"
+}
+
+<> 2019-05-01T094330.200.json
+
+###
+
+GET http://localhost:8080/getPost
+Accept: application/json
+
+###
+
+GET http://localhost:8080/getPost
+Accept: application/json
+
+###
+
 GET http://localhost:8080/getUser/test
 Accept: application/json
 
@@ -411,210 +590,6 @@ Content-Type: application/json
 }
 
 <> 2019-04-22T024345.200.json
-
-###
-
-PUT http://localhost:8080/updatePost
-Content-Type: application/json
-
-{
-  "userId": 1,
-  "title": "title222",
-  "content": "content",
-  "originalName": "test.jpg",
-  "storedPath": "aaa"
-}
-
-###
-
-POST http://localhost:8080/addPost
-Content-Type: application/json
-
-{
-  "userId": 1,
-  "title": "title",
-  "content": "content",
-  "originalName": "test.jpg",
-  "storedPath": "aaa"
-}
-
-<> 2019-04-22T024222.200.json
-
-###
-
-POST http://localhost:8080/addUser
-Content-Type: application/json
-
-{
-   "account": "test",
-   "password": "1234",
-   "name": "testname",
-   "email": "test@gmail.com",
-   "phone": "010-1234-5678"
-}
-
-<> 2019-04-22T024218.200.json
-
-###
-
-PUT http://localhost:8080/updatePost
-Content-Type: application/json
-
-{
-  "userId": 1,
-  "title": "title222",
-  "content": "content",
-  "originalName": "test.jpg",
-  "storedPath": "aaa"
-}
-
-###
-
-PUT http://localhost:8080/updatePost
-Content-Type: application/json
-{:
-  "userId": 1,
-  "title": "title222",
-  "content": "content",
-  "originalName": "test.jpg",
-  "storedPath": "aaa"
-}:
-
-<> 2019-04-22T024025.400.html
-
-###
-
-GET http://localhost:8080/getPost
-Accept: application/json
-
-<> 2019-04-22T023945.200.json
-
-###
-
-POST http://localhost:8080/addPost
-Content-Type: application/json
-
-{
-  "userId": 1,
-  "title": "title",
-  "content": "content",
-  "originalName": "test.jpg",
-  "storedPath": "aaa"
-}
-
-<> 2019-04-22T023919.200.json
-
-###
-
-POST http://localhost:8080/addUser
-Content-Type: application/json
-
-{
-   "account": "test",
-   "password": "1234",
-   "name": "testname",
-   "email": "test@gmail.com",
-   "phone": "010-1234-5678"
-}
-
-<> 2019-04-22T023916.200.json
-
-###
-
-POST http://localhost:8080/addPost
-Content-Type: application/json
-
-{
-  "userId": 1,
-  "title": "title",
-  "content": "content",
-  "originalName": "test.jpg",
-  "storedPath": "aaa"
-}
-
-<> 2019-04-22T023829.500.json
-
-###
-
-POST http://localhost:8080/addPost
-Content-Type: application/json
-
-{
-  "userId": "1",
-  "title": "title",
-  "content": "content",
-  "originalName": "test.jpg",
-  "storedPath": "aaa"
-}
-
-<> 2019-04-22T023811.500.json
-
-###
-
-POST http://localhost:8080/addUser
-Content-Type: application/json
-
-{
-  "userId": "1",
-  "title": "title",
-  "content": "content",
-  "originalName": "test.jpg",
-  "storedPath": "aaa"
-}
-
-<> 2019-04-22T023756.500.json
-
-###
-
-POST http://localhost:8080/addUser
-Content-Type: application/json
-
-{
-  "userId": "1",
-  "title": "title",
-  "content": "content",
-  "originalName": "test.jpg",
-  "storedPath": "data:image/png;base64,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"
-}
-
-<> 2019-04-22T023747.500.json
-
-###
-
-POST http://localhost:8080/addUser
-Content-Type: application/json
-
-{
-  "userId": "1",
-  "title": "title",
-  "content": "content",
-  "originalName": "test.jpg",
-  "storedPath": "data:image/png;base64,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"
-}
-
-<> 2019-04-22T023736.500.json
-
-###
-
-POST http://localhost:8080/addUser
-Content-Type: application/json
-
-{
-   "account": "test",
-   "password": "1234",
-   "name": "testname",
-   "email": "test@gmail.com",
-   "phone": "010-1234-5678"
-}
-
-<> 2019-04-22T023642.200.json
-
-###
-
-GET http://localhost:8080/getPost
-Accept: application/json
-
-<> 2019-04-22T023539.200.json
 
 ###
 

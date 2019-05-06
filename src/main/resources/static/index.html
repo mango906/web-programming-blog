@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            overflow-x: hidden;
+        }
+
+        header {
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: coral;
+        }
+
+        section{
+            position: fixed;
+            left: 200px;
+            right: 200px;
+            overflow-y: auto;
+            top: 100px;
+            bottom: 110px;
+        }
+
+        .section-title{
+            border-bottom: 1px solid #000;
+            font-size: 1.1rem;
+            padding: 20px;
+        }
+
+        .section-writer{
+            padding: 20px;
+            font-size: 1.1rem;
+            display: inline-block;
+        }
+        
+        .section-time{
+            float: right;
+            padding: 20px;
+            font-size: 1.1rem;
+            display: inline-block;
+        }
+
+        .section-content{
+            font-size: 1.1rem;
+            padding: 20px;
+        }
+
+        #left-aside {
+            width: 200px;
+            left: 0;
+            top: 100px;
+            bottom: 110px;
+            position: fixed;
+            background-color: #BDBDBD;
+        }
+
+        #right-aside {
+            width: 200px;
+            right: 0;
+            top: 100px;
+            bottom: 110px;
+            background: gray;
+            position: fixed;
+        }
+
+        footer {
+            left: 0;
+            right: 0;
+            height: 110px;
+            background-color: limegreen;
+            position: fixed;
+            bottom: 0;
+        }
+
+        input[type="text"]{
+            font-size: 1.1rem;
+            padding: 20px;
+        }
+
+        textarea{
+            font-size: 1.25rem;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .postBtn{
+            float: right;
+            padding: 10px 20px;
+            font-size: 1.25rem;
+        }
+
+        .tool-nav{
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            justify-content: center;
+            width: 100%;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 1.25rem;
+        }
+    </style>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <header></header>
+    <aside id="left-aside">
+        <button onclick="postForm()">새 글 쓰기</button>
+        <div>
+            <span>최근 글</span>
+            <ul class="board-nav"></ul>
+        </div>
+    </aside>
+    <aside id="right-aside">
+        <div class="user-id"></div>
+        <div class="user-name"></div>
+        <div class="user-created"></div>
+        <div class="user-count"></div>
+    </aside>
+    <section>
+        <div class="section-title">Section</div>
+        <ul>
+            <div class="section-writer">Writer</div>
+            <div class="section-time">Time</div>
+        </ul>
+        <div class="section-content">Content</div>
+        <div class="tool-nav"></div>
+    </section>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+</html>

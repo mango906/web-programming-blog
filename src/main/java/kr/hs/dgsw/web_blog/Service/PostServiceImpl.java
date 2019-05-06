@@ -42,7 +42,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostUsernameProtocol add(Post post) {
-        Post added = postRepository.save(post);
+        Post added = this.postRepository.save(post);
         String username = this.userRepository.findById(added.getUserId())
                 .map(found -> found.getName())
                 .orElse(null);
@@ -55,7 +55,7 @@ public class PostServiceImpl implements PostService {
         if (found.isPresent()) {
             found.get().setTitle(post.getTitle());
             found.get().setContent(post.getContent());
-            found.get().setPictures(post.getPictures());
+//            found.get().setPictures(post.getPictures());
             return this.postRepository.save(found.get());
         }
         return null;
@@ -69,5 +69,14 @@ public class PostServiceImpl implements PostService {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public Post getById(Long id) {
+        Optional<Post> found = postRepository.findById(id);
+        if (found.isPresent()) {
+            return found.get();
+        }
+        return null;
     }
 }

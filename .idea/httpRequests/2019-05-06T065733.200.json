@@ -1,0 +1,13 @@
+{
+  "code": 102,
+  "desc": "사용자를 추가했습니다.",
+  "data": {
+    "id": 1,
+    "account": "minkb01",
+    "name": "testname",
+    "email": "test@gmail.com",
+    "phone": "010-1234-5678",
+    "created": "2019-05-06 18:57:32",
+    "modified": "2019-05-06 18:57:32"
+  }
+}
